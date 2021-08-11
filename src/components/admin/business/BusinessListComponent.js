@@ -135,7 +135,7 @@ class BusinessListComponent extends Component {
     let businessRoutes = this.businessRouteClient.list.find(o => o.clientId === clientId);
     if(businessRoutes)
     {
-      const table = "<table class=\"table \">" +
+      const table = "<table class=\"table table-hover\">" +
       "<thead>" +
       "<tr>"+
       "<th scope=\"col\">&nbsp;</th>" +
@@ -349,7 +349,7 @@ class BusinessListComponent extends Component {
                 <div id="selectRoute" className="d-none text-center">
                     <Button
                       color="primary"
-                      className="m-2"
+                      className="mb-2"
                       variant="contained"
                       onClick={this.alerta}
                     >
